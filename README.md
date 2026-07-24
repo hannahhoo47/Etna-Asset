@@ -1,9 +1,28 @@
 # ETNA Labs — Brand Assets & Guide
 
-> Brand visual asset repository. This README is the brand usage guide.
+> Canonical repository for Etna brand assets. This README is the asset index and quick reference.
 > Design version: July 2026　｜　Primary color: `#C43426`
 
-Content marked **[Source]** comes directly from the design files. Content marked **[Recommended]** is added implementation guidance not defined in the source.
+The authoritative usage specification is [`BRAND_GUIDE.md`](./BRAND_GUIDE.md). Content marked **[Source]** comes directly from the design files. Content marked **[Recommended]** is added implementation guidance not defined in the source.
+
+---
+
+## 0. Brand Guide & Agent Entry Point
+
+Before creating or editing any Etna website, report, presentation, chart, document, or visual asset, read [`BRAND_GUIDE.md`](./BRAND_GUIDE.md) in full.
+
+For agents and automated design systems:
+
+1. Treat `BRAND_GUIDE.md` as the single source of truth for logo, color, typography, and usage rules.
+2. Preserve both the HEX values and the semantic role of every design token; do not interchange colors based on appearance alone.
+3. Use only Etna Red, black, or white logo assets. Extended application colors must never be applied to the logo.
+4. If this README, an implementation, or an older asset conflicts with `BRAND_GUIDE.md`, follow `BRAND_GUIDE.md`.
+
+Quick links:
+
+- [Complete brand guide](./BRAND_GUIDE.md)
+- [Logo PNGs](./logos/png)
+- [Fonts](./fonts)
 
 ---
 
@@ -71,30 +90,44 @@ Example: at a placed height of 40px, keep ≥ 20px of clear space on all sides.
 
 ---
 
-## 4. Color **[Source]**
+## 4. Color — Quick Reference
 
-The brand color spec defines three colors, with HEX and CMYK:
+The official logo palette contains three colors:
 
-| Color | HEX | RGB | CMYK |
-|---|---|---|---|
-| **Etna Red** | `#C43426` | 196, 52, 38 | **C29 M92 Y95 K0** |
-| **Black** | `#000000` | 0, 0, 0 | C0 M0 Y0 K100 |
-| **White** | `#FFFFFF` | 255, 255, 255 | C0 M0 Y0 K0 |
-
-> ℹ️ The red row in the source is labeled **"CMKY: 29 92 95 0"** — `CMKY` is a typo for `CMYK`; in standard order the value is **C29 M92 Y95 K0**.
-> HEX is for screen, CMYK for print. Output still varies slightly by ICC profile and paper, so proof on the first print run.
-
-### 4.1 Neutral Scale **[Recommended]**
-
-The source does not define neutrals. Suggested set for web and documents, warm-shifted from Etna Red:
-
-| Token | HEX | Use |
+| Color | HEX | Use |
 |---|---|---|
-| `--ink` | `#191715` | Body text |
-| `--muted` | `#6D6860` | Secondary text |
-| `--line` | `#D8CEC2` | Dividers, strokes |
-| `--bg` | `#F4F0EA` | Page background |
-| `--paper` | `#FFFDF9` | Cards, surfaces |
+| **Etna Red** | `#C43426` | Primary brand color, logo, emphasis, CTA |
+| **Black** | `#000000` | Logo, monochrome applications |
+| **White** | `#FFFFFF` | Reversed logo, whitespace |
+
+`#C43426` is the sole authoritative definition of Etna Red. Print conversions depend on the printer's ICC profile and paper; do not treat a converted CMYK value as a separate brand color specification. See [`BRAND_GUIDE.md` §4.2](./BRAND_GUIDE.md#42-印刷转换).
+
+### 4.1 Extended Application Palette
+
+These colors extend the official palette for reports, presentations, websites, charts, and digital products. They do not replace Etna Red and must never recolor the logo.
+
+| Token | Name | HEX | Semantic role |
+|---|---|---|---|
+| `--etna-red` | **Etna Red** | `#C43426` | Brand anchor; conviction and confirmed key conclusions |
+| `--deep-mineral` | **Deep Mineral** | `#596455` | Structure; long-term trends, markets, talent, and ecosystems |
+| `--mineral-blue` | **Mineral Blue** | `#65798A` | Analysis; technology, data, AI, robotics, and infrastructure |
+| `--mineral-sage` | **Mineral Sage** | `#A7B1A2` | Provisional categories and low-priority context |
+| `--mist-blue` | **Mist Blue** | `#B5C0C7` | Forecast, estimate, or information pending confirmation |
+
+Etna Red is the least-used but most prominent color. Deep Mineral and Mineral Blue are structural application colors, not additional brand primaries. Mineral Sage and Mist Blue must not communicate provisional status by color alone; pair them with labels such as `Draft`, `Forecast`, `Estimate`, or `Preliminary`.
+
+### 4.2 Neutral Surfaces
+
+| Token | Name | HEX | Use |
+|---|---|---|---|
+| `--ink` | Ink | `#191715` | Body text |
+| `--muted` | Muted | `#6D6860` | Secondary text |
+| `--line` | Line | `#D8CEC2` | Dividers, strokes |
+| `--bg` | **Warm Paper** | `#F4F0EA` | Narrative environment and section background |
+| `--white` | **White** | `#FFFFFF` | Facts, reading, charts, tables, and interactive content |
+| `--paper` | Paper | `#FFFDF9` | Cards and elevated surfaces |
+
+**Rule:** White carries information; Warm Paper carries environment. When both appear, use Warm Paper as the outer page or section background and White for the information-dense inner surface. Full usage ratios and constraints are in [`BRAND_GUIDE.md` §4.4](./BRAND_GUIDE.md#44-扩展应用色板-品牌应用规范2026-07-24-确认).
 
 ---
 
