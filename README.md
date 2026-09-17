@@ -17,6 +17,7 @@ For agents and automated design systems:
 2. Preserve both the HEX values and the semantic role of every design token; do not interchange colors based on appearance alone.
 3. Use only Etna Red, black, or white logo assets. Extended application colors must never be applied to the logo.
 4. If this README, an implementation, or an older asset conflicts with `BRAND_GUIDE.md`, follow `BRAND_GUIDE.md`.
+5. Default to the **red horizontal** logo (`logos/png/etna-horizontal-red.png`). Use the vertical lockup only for square placements, and prefer red there too.
 
 Quick links:
 
@@ -36,16 +37,18 @@ The logo is made up of the ETNA wordmark and the "Labs" subtitle. The letter **A
 
 ### 1.2 Standard Lockups
 
+**The primary logo is the red horizontal lockup** (`etna-horizontal-red.png`). Use it by default in every application: website header, document header, email signature, presentations, and reports. The vertical lockup is a variant for square or avatar-shaped placements only.
+
 | Lockup | Description | Use |
 |---|---|---|
-| **Vertical** | ETNA over Labs | Avatars, seals, square placements |
-| **Horizontal** | ETNALabs on one line | Website header, email signature, document footer |
+| **Horizontal** | ETNALabs on one line | **Primary.** Default for all applications; website header, email signature, document header/footer |
+| **Vertical** | ETNA over Labs | Variant for avatars, seals, square placements |
 
-Each lockup comes in **red / black / white**. Red versions:
+Each lockup comes in **red / black / white**. **Red is the preferred color for both lockups**; use black only for monochrome applications and white only on dark or Etna Red backgrounds. Red versions:
 
-| Vertical | Horizontal |
+| Horizontal (primary) | Vertical |
 |:--:|:--:|
-| <img src="https://raw.githubusercontent.com/hannahhoo47/Etna-Asset/main/logos/png/etna-vertical-red.png" width="200"> | <img src="https://raw.githubusercontent.com/hannahhoo47/Etna-Asset/main/logos/png/etna-horizontal-red.png" width="260"> |
+| <img src="https://raw.githubusercontent.com/hannahhoo47/Etna-Asset/main/logos/png/etna-horizontal-red.png" width="260"> | <img src="https://raw.githubusercontent.com/hannahhoo47/Etna-Asset/main/logos/png/etna-vertical-red.png" width="200"> |
 
 ### 1.3 Asset List
 
@@ -138,7 +141,6 @@ Font files live in [`fonts/`](https://github.com/hannahhoo47/Etna-Asset/tree/mai
 | Font | File | Role | License |
 |---|---|---|---|
 | **Josefin Sans** | [`fonts/JosefinSans-Regular.ttf`](https://github.com/hannahhoo47/Etna-Asset/blob/main/fonts/JosefinSans-Regular.ttf) | Display | OFL (open source) |
-| **Alimama FangYuanTi VF** | [`fonts/AlimamaFangYuanTiVF-Thin.ttf`](https://github.com/hannahhoo47/Etna-Asset/blob/main/fonts/AlimamaFangYuanTiVF-Thin.ttf) | Chinese | Free for commercial use |
 | **Avenir Next** | — (not included) | Latin body / UI | ⚠️ Proprietary Apple font — not distributed with this repo |
 
 > The design file `finSans-Regular-7 2.ttf` is actually **Josefin Sans** (confirmed via its internal name table); renamed to `JosefinSans-Regular.ttf` in this repo.
@@ -150,7 +152,6 @@ Font files live in [`fonts/`](https://github.com/hannahhoo47/Etna-Asset/tree/mai
 | **Logotype** | Custom | The four ETNA letters (including the volcano A) are custom-drawn — **never reset in any font**; use the vector files only |
 | **Display** | Josefin Sans | Geometric sans, low x-height, same character as the logo. Large sizes only |
 | **Latin body / UI** | Avenir Next Regular / Medium | Better long-form legibility than Josefin Sans |
-| **Chinese** | Alimama FangYuanTi VF | Rounded geometric, matches Josefin Sans |
 
 Josefin Sans is for large sizes only; use Avenir Next for body text below 16px. On web, fall back to Inter where you don't have an Avenir Next webfont license.
 
