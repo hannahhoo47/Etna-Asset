@@ -138,7 +138,6 @@ Font files live in [`fonts/`](https://github.com/hannahhoo47/Etna-Asset/tree/mai
 | Font | File | Role | License |
 |---|---|---|---|
 | **Josefin Sans** | [`fonts/JosefinSans-Regular.ttf`](https://github.com/hannahhoo47/Etna-Asset/blob/main/fonts/JosefinSans-Regular.ttf) | Display | OFL (open source) |
-| **Alimama FangYuanTi VF** | [`fonts/AlimamaFangYuanTiVF-Thin.ttf`](https://github.com/hannahhoo47/Etna-Asset/blob/main/fonts/AlimamaFangYuanTiVF-Thin.ttf) | Chinese | Free for commercial use |
 | **Avenir Next** | — (not included) | Latin body / UI | ⚠️ Proprietary Apple font — not distributed with this repo |
 
 > The design file `finSans-Regular-7 2.ttf` is actually **Josefin Sans** (confirmed via its internal name table); renamed to `JosefinSans-Regular.ttf` in this repo.
@@ -150,7 +149,6 @@ Font files live in [`fonts/`](https://github.com/hannahhoo47/Etna-Asset/tree/mai
 | **Logotype** | Custom | The four ETNA letters (including the volcano A) are custom-drawn — **never reset in any font**; use the vector files only |
 | **Display** | Josefin Sans | Geometric sans, low x-height, same character as the logo. Large sizes only |
 | **Latin body / UI** | Avenir Next Regular / Medium | Better long-form legibility than Josefin Sans |
-| **Chinese** | Alimama FangYuanTi VF | Rounded geometric, matches Josefin Sans |
 
 Josefin Sans is for large sizes only; use Avenir Next for body text below 16px. On web, fall back to Inter where you don't have an Avenir Next webfont license.
 
